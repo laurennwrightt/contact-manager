@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Scales website to devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>COP 4331 G5 Login</title>
+		<link rel="stylesheet" href="css/menustylesheet.css">
+	</head>
+	<nav>
+		<div class="topnav">
+				<a class="active" href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			<div class="login-container">
+				<p>Username: 
+				<br>Password:</p>
+				<button type="submit">Logout</button>
+			</div>
+		</div>
+	</nav>
+	<body>
+		<main>
+		<div class = "flex-container">
+			<table class ="flex-item">
+				<td><input type="text" placeholder="Search Bar" name="searchBar"></td>
+				<td><input type="text" placeholder="Search Bin" name="searchbin"></td>
+				<td><button id="refresh" class="buttons" onclick="doRefresh();">Refresh</button></td>
+				<td><button id="addContact" class="buttons" onclick="doAddContact();">Add Contact</button></td>
+			</table>
+			<table class ="flex-item">
+				<tr>
+					<th><p>First Name</p></th>
+					<th><p>Last Name</p></th>
+					<th><p>Phone Number</p></th>
+					<th><p>E-Mail</p></th>
+					<th><p>Date Added</p></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td><p>placeholder</p></td>
+					<td><p>placeholder</p></td>
+					<td><p>placeholder</p></td>
+					<td><p>placeholder</p></td>
+					<td><p>placeholder</p></td>
+					<td><button id="Edit" class="buttons" onclick="doEdit();">Edit</button></td>
+					<td><button id="Delete" class="buttons" onclick="doDelete();">Delete</button></td>
+				</tr>
+			</table>
+			<script>
+       			function doAddContact() {
+         		window.location.href="addContact.html";
+						}
+			</script>
+		</main>
+	</body>
+</html>
